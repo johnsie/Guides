@@ -4,7 +4,7 @@
 
 A simple factory pattern utilises a class that has single method which decides what type of class to instantiate and return. 
 
-#Php implmentation of a factory class
+# Php implementaion of a factory class
 ```
 class AnimalFactory {
     public static function create($animalType) {
@@ -25,7 +25,7 @@ The factory class above will create a type of animal class depenind on which $an
 
 
 
-### C# Implmenation of this design patter using an interface and a factory class
+### C# Implementation of this design pattern using an interface and a factory class
 
 [Click for full C# Implmenation](Design-Patterns-0001-Simple-Factory.cs)
 
