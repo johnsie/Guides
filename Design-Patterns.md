@@ -20,5 +20,7 @@ class AnimalFactory {
 }
 ```
 
+The factory class above will create a type of animal class depenind on which $animalType was requested.
+
 For more guides like this please see https://johnmccourt.com 
  
