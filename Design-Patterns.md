@@ -20,5 +20,5 @@ class AnimalFactory {
 }
 ```
 
-For more guides like this please see https://johnmccourt.con 
+For more guides like this please see https://johnmccourt.com 
  
