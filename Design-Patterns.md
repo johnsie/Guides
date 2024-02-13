@@ -1,6 +1,6 @@
 # Design Patterns
 
-[Click to see my Github project for this guide] https://github.com/users/johnsie/projects/4/
+[Click to see my Github project for this guide](https://github.com/users/johnsie/projects/4/)
 
 ## Simple Factory Pattern 
 
