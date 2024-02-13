@@ -1,6 +1,7 @@
-Design Patterns
+#Design Patterns
 
-Simple Factory Pattern 
+##Simple Factory Pattern 
+
 A simple factory pattern utilises a class that has single method which decides what type of class to instantiate and return. 
 
 '''
