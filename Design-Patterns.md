@@ -27,6 +27,7 @@ The factory class above will create a type of animal class depenind on which $an
 
 ### C# Implmenation of this design patter using an interface and a factory class
 
+[Click for full C# Implmenation](Design-Patterns-0001-Simple-Factory.cs)
 
 Create a an enum object which defines the types of animals available
 ```
@@ -87,7 +88,7 @@ class AnimalFactory : IAnimalFactory
 				  case AnimalType.Cow:
                 return new Cow();
             default:
-			    'No valid animal type has been defined so return a dog
+			    //No valid animal type has been defined so return a dog
                 return new Dog();
         }
     }
