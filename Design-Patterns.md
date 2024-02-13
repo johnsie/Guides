@@ -1,5 +1,7 @@
 # Design Patterns
 
+[Click to see my Github project for this guide] https://github.com/users/johnsie/projects/4/
+
 ## Simple Factory Pattern 
 
 A simple factory pattern utilises a class that has single method which decides what type of class to instantiate and return. 
@@ -27,7 +29,7 @@ The factory class above will create a type of animal class depenind on which $an
 
 ### C# Implementation of this design pattern using an interface and a factory class
 
-[Click for full C# Implmenation](Design-Patterns-0001-Simple-Factory.cs)
+[Click for full C# Implemenation](Design-Patterns-0001-Simple-Factory.cs)
 
 Create a an enum object which defines the types of animals available
 ```
