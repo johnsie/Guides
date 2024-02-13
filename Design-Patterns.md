@@ -23,13 +23,13 @@ class AnimalFactory {
 }
 ```
 
-The factory class above will create a type of animal class depenind on which $animalType was requested.
+The factory class above will create a type of animal class depending on which $animalType was requested.
 
 
 
 ### C# Implementation of this design pattern using an interface and a factory class
 
-[Click for full C# Implemenation](Design-Patterns-0001-Simple-Factory.cs)
+[Click for full C# Implementation](Design-Patterns-0001-Simple-Factory.cs)
 
 Create a an enum object which defines the types of animals available
 ```
