@@ -4,7 +4,7 @@
 
 A simple factory pattern utilises a class that has single method which decides what type of class to instantiate and return. 
 
-'''
+```
 class AnimalFactory {
     public static function create($animalType) {
         switch ($animalType) {
@@ -18,8 +18,7 @@ class AnimalFactory {
         }
     }
 }
-'''
-
+```
 
 For more guides like this please see https://johnmccourt.con 
  
