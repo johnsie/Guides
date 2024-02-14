@@ -129,7 +129,7 @@ As suggested above there are two ways of implementing this design pattern. One w
 
 I will continue with my animal analogy, but this time I will be giving different homes to the animals we create. Eg. Zoo, Human Home, Farm 
 
-## C# implementation of Factory Method design pattern using abstract classes 
+### C# implementation of Factory Method design pattern using abstract classes 
 
 [Click for full C# Implementation](Design-Patterns-0002-Factory-Method-with-abstract-class.cs)
 
