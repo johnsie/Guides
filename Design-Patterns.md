@@ -2,7 +2,7 @@
 
 ### What is this document?
 
-This is a guide that I'm writing as I study different design patterns.  I intend discussing how each design pattern works, why it is used and showing some code implementations of each in PHP, C# and Java.  I will explain how I created each implementation. The purpose is to help anyone who reads it learn about different ways to implment the patterns and to help me understand the concepts in such a way that I can use or explain them better. I'm witing this as I go along with my learning so  will be checking updates periodically. For this reason there ma be times when it may not appear complete.
+This is a guide that I'm writing as I study different design patterns.  I intend discussing how each design pattern works, why it is used and showing some code implementations of each in PHP, C# and Java.  I will explain how I created each implementation. The purpose is to help anyone who reads it learn about different ways to implement the patterns and to help me understand the concepts in such a way that I can use or explain them better. I'm witing this as I go along with my learning so  will be checking updates periodically. For this reason there ma be times when it may not appear complete.
 
 [Click to see my Github project for this guide](https://github.com/users/johnsie/projects/4/)
 
