@@ -1,5 +1,9 @@
 # Design Patterns
 
+### What is this document?
+
+This is a guide that I'm writing as I study different design patterns.  I intend discussing how each design pattern works, why it is used and showing some code implementations of each in PHP, C# and Jav.  I will explain how I created each implementation. The purpose is to help anyone who reads it, and to help me understand the concepts in such a way that I can explain them to people or use them better. I'm doing this is as I go along and will be checking it in as  go along, so at times it may not appear complete.
+
 [Click to see my Github project for this guide](https://github.com/users/johnsie/projects/4/)
 
 ## Simple Factory Pattern 
