@@ -118,5 +118,25 @@ static void Main(string[] args)
 
 
 
+
+## Factory Method Pattern 
+
+Wikipedia defines a factory pattern as:
+
+> a [creational pattern](https://en.wikipedia.org/wiki/Creational_pattern "Creational pattern") that uses factory methods to deal with the problem of [creating objects](https://en.wikipedia.org/wiki/Object_creation "Object creation") without having to specify the exact [class](https://en.wikipedia.org/wiki/Class_(computer_programming) "Class (computer programming)") of the object that will be created. This is done by creating objects by calling a factory method—either specified in an [interface](https://en.wikipedia.org/wiki/Interface_(object-oriented_programming) "Interface (object-oriented programming)") and implemented by child classes, or implemented in a base class and optionally [overridden](https://en.wikipedia.org/wiki/Method_overriding "Method overriding") by derived classes—rather than by calling a [constructor](https://en.wikipedia.org/wiki/Constructor_(object-oriented_programming) "Constructor (object-oriented programming)").
+
+As suggested above there are two ways of implementing this design pattern. One way uses an abstract class and override methods, and the other uses an interface which defines the method. In this guide I'm going to attempt implementing it both ways wherever possible.
+
+I will continue with my animal analogy, but this time I will be giving different homes to the animals we create. Eg. Zoo, Human Home, Farm 
+
+## C# implementation of Factory Method design pattern using abstract classes 
+
+[Click for full C# Implementation](Design-Patterns-0002-Factory-Method-with-abstract-class.cs)
+
+I'm taking a break now, but later will the explain how I created my implementation and how it works.
+
+
+
+
 For more guides like this please see https://johnmccourt.com 
  
