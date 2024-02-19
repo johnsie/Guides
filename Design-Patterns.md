@@ -199,7 +199,7 @@ Each concrete creator will need to have a method that creates instances of the c
 
 
 ```
-The ConcreateCreator classes need to implement the methods which create animals. We've got three here, one for Zoo, one for House and the other for farm. They are expected to create the type of Animal that would be in each type of home.
+The ConcreteCreator classes need to implement the methods which create animals. We've got three here, one for Zoo, one for House and the other for farm. They are expected to create the type of Animal that would be in each type of home.
 ```
 
     /// <summary>
@@ -268,7 +268,7 @@ class MainApp
             homes[0] = new Zoo();
             homes[1] = new House();
             homes[2] = new Farm();
-            // documents[1] = new Report();
+      
             // Display document pages
             foreach (AnimalHome home in homes)
             {
@@ -284,6 +284,8 @@ class MainApp
     }
 
 ```
+
+So there we have it.   The main void will instantiate three animal homes which will then go on to instantiate a number of (concrete) animals which are specific to that type of home. The foreach method proves this by listing each of the animals created by each home.
 
 
 For more guides like this please see https://johnmccourt.com 
