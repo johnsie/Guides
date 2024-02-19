@@ -147,7 +147,7 @@ Create the abract class that every Concrete (type of "Animal" class) class will 
     }
 
 ```
-Create each of the "Concrete" classes. The facory methods will be responsible for instantiating these
+Create each of the "Concrete" classes. The factory methods will be responsible for instantiating these
 ``` 
     /// <summary>
     /// A 'ConcreteProduct' class
