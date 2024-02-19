@@ -133,9 +133,157 @@ I will continue with my animal analogy, but this time I will be giving different
 
 [Click for full C# Implementation](Design-Patterns-0002-Factory-Method-with-abstract-class.cs)
 
-I'm taking a break now, but later will the explain how I created my implementation and how it works.
+
+Create the abract class that every Concrete (type of "Animal" class) class will need to implement
+```
+
+ 
+    
+    /// <summary>
+    /// The 'Product' abstract class
+    /// </summary>
+    abstract class Animal
+    {
+    }
+
+```
+Create each of the "Concrete" classes. The facory methods will be responsible for instantiating these
+``` 
+    /// <summary>
+    /// A 'ConcreteProduct' class
+    /// </summary>
+    class Dog : Animal
+    {
+    }
+    /// <summary>
+    /// A 'ConcreteProduct' class
+    /// </summary>
+    class Cat : Animal
+    {
+    }
+    /// <summary>
+    /// A 'ConcreteProduct' class
+    /// </summary>
+    class Giraffe : Animal
+    {
+    }
+    /// <summary>
+    /// A 'ConcreteProduct' class
+    /// </summary>
+    class Cow : Animal
+    {
+    }
+
+```
+Create an abstract class that 'concrete creator' factory classes will implement to actually create the concrete animal classes
+Each concrete creator will need to have a method that creates instances of the concrete classes. 
+```
+    /// <summary>
+    /// The 'Creator' abstract class
+    /// </summary>
+    abstract class AnimalHome
+    {
+        private List<Animal> _animals = new List<Animal>();
+        // Constructor calls abstract Factory method
+        public AnimalHome()
+        {
+            this.CreateAnimals();
+        }
+        public List<Animal> Animals
+        {
+            get { return _animals; }
+        }
+        // Factory Method
+        public abstract void CreateAnimals();
+    }
 
 
+```
+The ConcreateCreator classes need to implement the methods which create animals. We've got three here, one for Zoo, one for House and the other for farm. They are expected to create the type of Animal that would be in each type of home.
+```
+
+    /// <summary>
+    /// A 'ConcreteCreator' class
+    /// </summary>
+    class Zoo : AnimalHome
+    {
+        // Factory Method implementation
+        public override void CreateAnimals()
+        {
+            Animals.Add(new Giraffe());
+
+        }
+    }
+    /// <summary>
+    /// A 'ConcreteCreator' class
+    /// </summary>
+    class House : AnimalHome
+    {
+        // Factory Method implementation
+        public override void CreateAnimals()
+        {
+            Animals.Add(new Cat());
+            Animals.Add(new Dog());
+            Animals.Add(new Dog());
+            Animals.Add(new Dog());
+
+        }
+
+    }
+	
+	/// <summary>
+    /// A 'ConcreteCreator' class
+    /// </summary>
+        class Farm : AnimalHome
+        {
+            // Factory Method implementation
+            public override void CreateAnimals()
+            {
+                Animals.Add(new Cow());
+
+
+            }
+
+
+        }
+```
+
+Add the Main App class that utilise the Factory Method to create the animal homes and animals
+
+```
+
+ /// <summary>
+    /// MainApp startup class for Real-World 
+    /// Factory Method Design Pattern.
+    /// </summary>
+class MainApp
+    {
+        /// <summary>
+        /// Entry point into console application.
+        /// </summary>
+        static void Main()
+        {
+            // Note: constructors call Factory Method
+            AnimalHome[] homes = new AnimalHome[3];
+            homes[0] = new Zoo();
+            homes[1] = new House();
+            homes[2] = new Farm();
+            // documents[1] = new Report();
+            // Display document pages
+            foreach (AnimalHome home in homes)
+            {
+                Console.WriteLine("\n-------" + home.GetType().Name + "------");
+                foreach (Animal animal in home.Animals)
+                {
+                    Console.WriteLine(" " + animal.GetType().Name);
+                }
+            }
+            // Wait for user
+            Console.ReadKey();
+        }
+    }
+
+```
 
 
 For more guides like this please see https://johnmccourt.com 
