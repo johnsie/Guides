@@ -129,7 +129,7 @@ As suggested above there are two ways of implementing this design pattern. One w
 
 I will continue with my animal analogy, but this time I will be giving different homes to the animals we create. Eg. Zoo, Human Home, Farm 
 
-For this design pattern it's probably imporant that you know what concrete and abstract classes are
+For this design pattern it's probably imporant that you know what concrete and abstract classes are and how they differ from interfaces
 
 ### Concrete Class
 Wikipedia:
@@ -147,7 +147,21 @@ The abstract keyword enables you to create classes and class members that are in
 
 So put basically, a abstract class can be a class that defines which methods need to be used by any of its subclassess.
 
-Below is code that where an abstract class is definited and  a concrete class implements it.
+
+### Interface vs Abstract Classes
+
+Abstract classes can have methods with implementation whereas interface provides absolute abstraction and can't have any method implementations. Note that from Java 8 onwards, we can create default and static methods in interface that contains the method implementations. [Digital Ocean](https://www.digitalocean.com/community/tutorials/difference-between-abstract-class-and-interface-in-java) 
+
+This is why subclasses that implement abstact classes in C# usually use the override keyword in their methods. They aren't implementing a pre-defined method, they are actually overriding an exisiting one. An abstract class is 'extended' by a subclass whereas an interface is 'implemented'
+
+
+
+
+
+
+Below is code where an abstract class is definied and  a concrete class implements its methods using overrides. Note the
+
+
 
 ```
 public abstract class Animal      //abstract type  
