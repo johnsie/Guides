@@ -8,13 +8,13 @@ This is a guide that I'm writing as I study different design patterns.  I intend
 
 ### Patterns being covered
 
-The following definitions are heavily summarised. Please use them only to help remember what separates the different patterns. 
+The following definitions are heavily summarised. Please use them only to help remember what separates the different patterns. More detailed definitions, explanations and implementations will be discussed later.
 
 1. **Simple Factory Pattern** - Utilises a class that has a single method for deciding which type of class to instantiate 
 
-2. **Factory Method Pattern** - Provices and interface/abstract class for creating objects. Allows subclasses to decide which concrete class to instantiate
+2. **Factory Method Pattern** - Provides an interface/abstract class for creating objects. A factory implements/entends that.  Allows subclasses (factories) to decide which concrete class to instantiate
 
-3. **Abstract Factory Method** - Factory of factories. Contains abstact & concrete factories  and well as abstract & concrete products
+3. **Abstract Factory Method** - Factory of factories. Contains abstact & concrete factories  as well as abstract & concrete products
 
 
 ## Simple Factory Pattern 
