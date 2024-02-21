@@ -378,8 +378,6 @@ Define the abstract objects that the concrete classes will extend
 We're selling burger and a side. The factories will decide which types of burger to and side to build
 
 ```
-
-
     /// <summary>
     /// An abstract object.
     /// </summary>
@@ -392,10 +390,7 @@ We're selling burger and a side. The factories will decide which types of burger
 
 ```
 Concrete classes for the burders. These are the different types of burger and side (see above) which are available
-
 ```
-
-
     /// <summary>
     /// A ConcreteProduct
     /// </summary>
@@ -427,10 +422,6 @@ Concrete classes for the burders. These are the different types of burger and si
 All meals created will need to have a burger and a side. So create the abstract class for that
 
 ```
-
-
-
-
     /// <summary>
     /// The AbstractFactory class, which defines methods for creating abstract objects.
     /// </summary>
@@ -439,15 +430,9 @@ All meals created will need to have a burger and a side. So create the abstract 
         public abstract Burger CreateBurger();
         public abstract Side CreateSide();
     }
-
-
-
-
-
-
-
-
-
+```
+We need the factories  which create concrete objects. These will  create food items to put into the meal
+```
     /// <summary>
     /// A ConcreteFactory which creates concrete objects by implementing the abstract factory's methods.
     /// </summary>
@@ -483,11 +468,7 @@ All meals created will need to have a burger and a side. So create the abstract 
 Below we have code that utlises factoies to create meals depending on the customer's preference
 
 ```
-
-
- 
-
-    class Program
+class Program
     {
         static void Main(string[] args)
         {
