@@ -2,7 +2,7 @@
 
 ### What is this document?
 
-This is a guide that I'm writing as I study different design patterns.  I intend discussing how each design pattern works, why it is used and showing some code implementations of each in PHP, C# and Java.  I will explain how I created each implementation. The purpose is to help anyone who reads it learn about different ways to implement the patterns and to help me understand the concepts in such a way that I can use or explain them better. I'm writing this as I go along with my learning so  will be checking updates in periodically. For this reason there may be times when it may not appear complete. Please feel free to add comments, suggests or correction as issues here on github and I will do my best to address them in a timely manner.
+This is a guide that I'm writing as I study different design patterns.  I intend discussing how each design pattern works, why it is used and showing some code implementations of each in PHP, C# and Java.  I will explain how I created each implementation. The purpose is to help anyone who reads it learn about different ways to implement the patterns and to help me understand the concepts in such a way that I can use or explain them better. I'm writing this as I go along with my learning so  will be checking updates in periodically. For this reason there may be times when it may not appear complete. Please feel free to add comments, suggestions or corrections as issues here on github and I will do my best to address them in a timely manner.
 
 [Click to see my Github project for this guide](https://github.com/users/johnsie/projects/4/)
 
@@ -31,7 +31,7 @@ The factory class above will create a type of animal class depending on which $a
 
 
 
-### C# Implementation of this design pattern using an interface and a factory class
+### C# Implementation of Simple Factory design pattern using an interface and a factory class
 
 [Click for full C# Implementation](Design-Patterns-0001-Simple-Factory.cs)
 
@@ -131,14 +131,14 @@ I will continue with my animal analogy, but this time I will be giving different
 
 For this design pattern it's probably imporant that you know what concrete and abstract classes are
 
-###Concrete Class
+### Concrete Class
 Wikipedia:
  A class that can be instantiated and may have concrete methods. 
 
 Microsoft Learn describes this as:
 A class that allows creating an instance or an object using the new keyword. A concrete method is a method that can be called directly
 
- ###Abtract Class
+ ### Abtract Class
  Wikipedia:? 
  (object-oriented programming) A class that cannot be instantiated and may have abstract method.
 
@@ -331,7 +331,7 @@ So there we have it.   The main void will instantiate three animal homes which w
 
 
 
-##Abstract Factory Design Pattern
+## Abstract Factory Design Pattern
 
 Wikipedia defines the Abstract Factory design pattern as "one which that provides a way to create families of related objects without imposing their concrete classes, by encapsulating a group of individual factories that have a common theme without specifying their concrete classes."
 
