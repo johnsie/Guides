@@ -129,6 +129,48 @@ As suggested above there are two ways of implementing this design pattern. One w
 
 I will continue with my animal analogy, but this time I will be giving different homes to the animals we create. Eg. Zoo, Human Home, Farm 
 
+For this design pattern it's probably imporant that you know what concrete and abstract classes are
+
+###Concrete Class
+Wikipedia:
+ A class that can be instantiated and may have concrete methods. 
+
+Microsoft Learn describes this as:
+A class that allows creating an instance or an object using the new keyword. A concrete method is a method that can be called directly
+
+ ###Abtract Class
+ Wikipedia:? 
+ (object-oriented programming) A class that cannot be instantiated and may have abstract method.
+
+Microsoft Learn:
+The abstract keyword enables you to create classes and class members that are incomplete and must be implemented in a derived class.
+
+So put basically, a abstract class can be a class that defines which methods need to be used by any of its subclassess.
+
+Below is code that where an abstract class is definited and  a concrete class implements it.
+
+```
+public abstract class Animal      //abstract type  
+    {  
+        public abstract void Talk();      //abstract method  
+        public abstract void Move();   //abstract method  
+    }  
+  
+    public class Dog : Animal  //Concrete type  
+    {  
+        public override void Talk()  //Concrete method  
+        {  
+            Console.WriteLine("This blog post is awesome! :)");  
+        }  
+  
+        public override void Move()  
+        {  
+            Console.WriteLine("I'm walking on 2 feet.");  
+        }  
+    }  
+
+```
+
 ### C# implementation of Factory Method design pattern using abstract classes 
 
 [Click for full C# Implementation](Design-Patterns-0002-Factory-Method-with-abstract-class.cs)
@@ -286,6 +328,14 @@ class MainApp
 ```
 
 So there we have it.   The main void will instantiate three animal homes which will then go on to instantiate a number of (concrete) animals which are specific to that type of home. The foreach method proves this by listing each of the animals created by each home.
+
+
+
+##Abstract Factory Design Pattern
+
+Wikipedia defines the Abstract Factory design pattern as "one which that provides a way to create families of related objects without imposing their concrete classes, by encapsulating a group of individual factories that have a common theme without specifying their concrete classes."
+
+Some other developers that I've spoken to call it a "factory of factories" which provides an interface for creatin families of related or dependent objects without specifying their concrete classes.
 
 
 For more guides like this please see https://johnmccourt.com 
