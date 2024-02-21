@@ -349,7 +349,25 @@ So there we have it.   The main void will instantiate three animal homes which w
 
 Wikipedia defines the Abstract Factory design pattern as "one which that provides a way to create families of related objects without imposing their concrete classes, by encapsulating a group of individual factories that have a common theme without specifying their concrete classes."
 
-Some other developers that I've spoken to call it a "factory of factories" which provides an interface for creatin families of related or dependent objects without specifying their concrete classes.
+Some other developers that I've spoken to call it a "factory of factories" which provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+
+
+Bytehide claim that that an abtract factory had four main components:
+
+```
+- Abstract Product: Declares an interface for a type of product object.
+
+- Concrete Product: Defines a specific product object to be created by the corresponding Concrete Factory.
+ Abstract Factory
+
+- The abstract factory declares an interface for operations that create abstract objects.
+
+- Concrete Factory: Implements the operations to create concrete products.
+```
+[Bytehide Design Patterns Guide](https://www.bytehide.com/blog/abstact-factory-pattern-csharp)
+
+There could be multiple Concrete  Products and multiple Concrete factories. Each of which implment or extend their respective interface or abstract classes.
+
 
 
 For more guides like this please see https://johnmccourt.com 
