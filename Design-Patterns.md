@@ -17,6 +17,39 @@ The following definitions are heavily summarised. Please use them only to help r
 3. **Abstract Factory Method** - Factory of factories. Contains abstact & concrete factories  as well as abstract & concrete products
 
 
+### Solid Design Principles
+
+It's probably a good idea to learn these before jumping into design patterns
+
+
+**Single Responisibility** - Any particular  class should just have a single reason to change. A class should only have one tpye of job to doy
+
+And example is that if a one classes could be manage entries in a list (add/remove). Then a second class would be created to be repsonsible for giving that list persistence. This would prevent one class having to have too many responsibiliies.
+
+
+**Open-Closed Principle** - Parts of a system should be open for extension, but closed for modifcation
+
+This prevents  situations in which a change to one of your classes also requires you to adapt all depending clases. 
+
+It's claimed that Robert C. Martin  initially proposed to use inheritance to achieve this goal.  Later on he and other redifined it to the "Polymorphic Open/Closed Principle" and decided to use interfaces to achieve it.  Interfaces are closed for modification, but you can provide new implmentations in order to extend functionality of software. Implementations of an interface are independent of each other and don't need to share code.
+
+An interface could have a method buildBurger(). And then two different classes can implement it. One of those classes could build a chicken buger and the other one could build a beef burger. Both classes would work differently, but they still need to implement a method called buidBurger(). I would be possible to add new burger types without ever having to change the interface. 
+
+
+**Liskov Substitution Principle** - You should be able to substitute a base type with a sub type or vice-versa. Subtypes must be substitutable for their base type.
+
+An example of this could be having an Rectangle class and then a Square class that implements rectangle.  You have to set the two dimensions of a rectangle, but not with a square.  If the Square class forces all sides of the shape to be the same size then it might not work properly for a rectangle with different length and width.
+
+
+ in C# the type can be interface, class, or abstract class
+
+
+
+
+
+
+
+
 ## Simple Factory Pattern 
 
 A simple factory pattern utilises a class that has single method which decides what type of class to instantiate and return. 
