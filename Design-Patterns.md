@@ -44,6 +44,29 @@ An example of this could be having an Rectangle class and then a Square class th
  in C# the type can be interface, class, or abstract class
 
 
+**Interface Segregation Principle** - Clients should not be forced to depend on methods they do not use.
+
+In Quoting Robert C Martin [Stackify](https://stackify.com/interface-segregation-principle/) explained this slightly differently - “Clients should not be forced to depend upon interfaces that they do not use.”
+
+A good example of this would be if there was an interface for multi-function printers. If it had print, scan and fax methods then anything that implelemts it would need to have those methods. This wouldn't make sense for a printer that only has print capababilities. 
+
+Instead it would be better to have an interface for Printer, Scanner Fax. Then the sub class would be able implement whichever interfaces are required eg:
+
+pubic class Printer : IPrinter
+{
+//Only needs print methods    
+}
+
+public class Photocopier : IPrinter, IScanner
+{
+//implements methods for printer and scanner
+}
+
+
+**Interface Segregation Principle**  
+
+
+
 
 
 
