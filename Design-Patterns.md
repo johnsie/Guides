@@ -31,7 +31,7 @@ An example is that if one class could be used to manage entries in a list (add/r
 
 This prevents  situations in which a change to one of your classes also requires you to adapt all depending clases. 
 
-It's claimed that Robert C. Martin  initially proposed to use inheritance to achieve this goal.  Later on he and other redifined it to the "Polymorphic Open/Closed Principle" and decided to use interfaces to achieve it.  Interfaces are closed for modification, but you can provide new implmentations in order to extend functionality of software. Implementations of an interface are independent of each other and don't need to share code.
+It's claimed that Robert C. Martin  initially proposed to use inheritance to achieve this goal.  Later on he and others redefined it to the "Polymorphic Open/Closed Principle" and decided to use interfaces to achieve it.  Interfaces are closed for modification, but you can provide new implmentations in order to extend functionality of software. Implementations of an interface are independent of each other and don't need to share code.
 
 An interface could have a method buildBurger(). And then two different classes can implement it. One of those classes could build a chicken buger and the other one could build a beef burger. Both classes would work differently, but they still need to implement a method called buidBurger(). I would be possible to add new burger types without ever having to change the interface. 
 
