@@ -24,7 +24,7 @@ It's probably a good idea to learn these before jumping into design patterns
 
 **Single Responisibility** - Any particular  class should just have a single reason to change. A class should only have one type of job to do
 
-An example is that if one class could be manage entries in a list (add/remove). Then a second class would be created to be repsonsible for giving that list persistence. This would prevent one class having to have too many responsibilities.
+An example is that if one class could be used to manage entries in a list (add/remove). Then a second class would be created to be repsonsible for giving that list persistence. This would prevent one class having to have too many responsibilities.
 
 
 **Open-Closed Principle** - Parts of a system should be open for extension, but closed for modifcation
