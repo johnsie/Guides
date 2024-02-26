@@ -17,7 +17,7 @@ The following definitions are heavily summarised. Please use them only to help r
 3. **Abstract Factory Method** - Factory of factories. Contains abstact & concrete factories  as well as abstract & concrete products
 
 
-### Solid Design Principles
+## Solid Design Principles
 
 It's probably a good idea to learn these before jumping into design patterns
 
