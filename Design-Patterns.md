@@ -19,7 +19,7 @@ The following definitions are heavily summarised. Please use them only to help r
 
 ## Solid Design Principles
 
-It's probably a good idea to learn these before jumping into design patterns
+It's probably a good idea to learn these before jumping into design patterns. These are the principles promoted by Robert C. Martin and form the acronym SOLID.
 
 
 **Single Responsibility** - Any particular  class should just have a single reason to change. A class should only have one type of job to do
@@ -63,9 +63,12 @@ public class Photocopier : IPrinter, IScanner
 }
 
 
-**Interface Segregation Principle**  
+**Dependency Inversion Principle**  
 
+Robert C. Martin
 
+1. High-level modules should not depend on low-level modules. Both should depend on abstractions.
+2. Abstractions should not depend on details. Details should depend on abstractions.
 
 
 
